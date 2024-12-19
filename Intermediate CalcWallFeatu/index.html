@@ -69,30 +69,31 @@
     </div>
 
     <script>
-        let value = '';
+        let values = '';
 
         function appendNumber(number) {
-            if (value === '0') {
-                value = number.toString();
+            if (values === '0') {
+                values = number.toString();
             } else {
-                value += number.toString();
+                values += number.toString();
             }
             displayResult();
         }
         function appendOperator(operator) {
-            value += operator;
+            values += operator;
             displayResult();
         }
         function calculateResult(operator) {
-            const value = eval(value);
+            const finalResult = eval(values);
+            values = finalResult;
             displayResult();
         }
         function clearScreen(operator) {
-            value = '';
+            values = '';
             displayResult();
         }
         function displayResult() {
-            document.getElementById('outputScreen').value = value;
+            document.getElementById('outputScreen').value = values;
         }
     </script>
 </body>

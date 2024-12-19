@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Calculating sum and multiplication of two number</h1>
+        <input type="text" id="result" readonly placeholder="OUTPUT BOX">
+
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendNumber(4)">4</button>
+
+        <button onclick="appendOperation('+')">+</button>
+        <button onclick="appendOperation('*')">*</button>
+
+        <button onclick="calculateResult('=')">=</button>
+    </div>
+
+    <script>
+        let outputBox = '';
+
+        function appendNumber(number) {
+            if (outputBox === '0') {
+                outputBox = number.toString();
+            } else {
+                outputBox += number.toString();
+            }
+            dispFunction();
+        }
+
+        function appendOperation(operator) {
+            outputBox += operator;
+            dispFunction();
+        }
+
+        function calculateResult(operator) {
+            const finalResult = eval(outputBox);
+            outputBox = finalResult;
+            dispFunction();
+        }
+
+        function dispFunction() {
+            document.getElementById('result').value = outputBox;
+        }
+    </script>
+
+</body>
+
+</html>

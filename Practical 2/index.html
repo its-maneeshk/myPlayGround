@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let initialValue = 0;
+
+        function appendNumber(number) {
+            if(initialValue === 0) {
+                initialValue = number.toString();
+            } else {
+                initialValue += number.toString();
+            }
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            document.getElementById("results").value = initialValue;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Box input using javascript</h1>
+        <input type="number" id="results" readonly placeholder="OUTPUTBOX">
+
+        <button onclick="appendNumber(5)">5</button>
+    </div>
+</body>
+</html>

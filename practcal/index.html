@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let initialValue = 0;
+
+        function appendNumber(number) {
+            initialValue += number;
+            updateDisplayer();
+        }
+
+        function updateDisplayer() {
+            document.getElementById('display').value = initialValue;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="display" readonly placeholder="Outputbox">
+    <button onclick="appendNumber(5)">5</button>
+</body>
+</html>

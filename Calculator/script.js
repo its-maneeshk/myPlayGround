@@ -1,39 +1,15 @@
-let displayValue = '0';
+let initialValue = '';
 
 function appendNumber(number) {
-    if (displayValue === '0') {
-        displayValue = number.toString();
+    if(initialValue === '0') {
+        initialValue = number.toSting();
     } else {
-        displayValue += number.toString();
+        initialValue += number.toString();
     }
-    updateDisplay();
+    displayResult();
 }
 
-function appendOperator(operator) {
-    displayValue += operator;
-    updateDisplay();
-}
 
-function clearDisplay() {
-    displayValue = '0';
-    updateDisplay();
-}
-
-function deleteLast() {
-    displayValue = displayValue.slice(0, -1) || '0';
-    updateDisplay();
-}
-
-function calculate() {
-    try {
-        displayValue = eval(displayValue); // Evaluate the expression
-        updateDisplay();
-    } catch (e) {
-        displayValue = 'Error';
-        updateDisplay();
-    }
-}
-
-function updateDisplay() {
-    document.getElementById('display').value = displayValue;
+function displayResult() {
+    document.getElementById('displayAnswer').value = initialValue;
 }

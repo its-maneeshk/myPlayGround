@@ -6,53 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/415161d9d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Calculator</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <h1 class="logo-text">Calculator.io</h1>
+            <h1 class="logo-text"><span>calci</span>.io</h1>
             <div class="nav-left">
                 <a href="#" class="trn-scl"><i class="fa-solid fa-circle-info"></i></a>
                 <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
         </nav>
     </header>
-
+    <div class="header-divider-line"></div>
+    <div class="circle"></div>
     <section>
+        <div class="left-card">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo praesentium modi, dignissimos hic natus tempore numquam consequatur dicta aperiam quaerat et libero delectus quam fuga. Mollitia minima aspernatur blanditiis error.</p>
+        </div>
+        <div class="vertical-line"></div>
         <div class="card">
             <div class="insideCalc">
-                <input type="text" id="displayAnswer" readonly placeholder="OUTPUT WILL BE SHOWN HERE">
+                <p class="calculatorText">Basic Calculator</p>
+                <input type="text" id="answerScreen" readonly placeholder="00000000000000">
+                <div class="errorDiv">
+                    <p id="errorMessage"> </p>
+                </div>
 
                 <div class="buttons-collection">
                     <div class="first-row">
-                        <button onclick="appendOperator('/')"><i class="fa-solid fa-divide"></i></button>
-                        <button style="width: 170px; background-color: #ccffcc;" onclick="clearScreen()"><i class="fa-solid fa-c"></i></button>
+                        <button style="background-color: #23a056;" onclick="appendOperator('/')"><i
+                                class="fa-solid fa-divide"></i></button>
+                        <button style="width: 170px; background-color: #23a056;" onclick="clearScreen()"><i
+                                class="fa-solid fa-c"></i></button>
                         <button onclick="backSpace()"><i class="fa-solid fa-delete-left"></i></button>
                     </div>
                     <div class="second-row">
-                        <button onclick="appendOperator('*')"><i class="fa-solid fa-xmark"></i></button> 
+                        <button style="background-color: #23a056;" onclick="appendOperator('*')"><i
+                                class="fa-solid fa-xmark"></i></button>
                         <button onclick="appendNumber(7)"><i class="fa-solid fa-7"></i></button>
                         <button onclick="appendNumber(8)"><i class="fa-solid fa-8"></i></button>
                         <button onclick="appendNumber(9)"><i class="fa-solid fa-9"></i></button>
                     </div>
                     <div class="third-row">
-                        <button onclick="appendOperator('-')"><i class="fa-solid fa-minus"></i></button>
+                        <button style="background-color: #23a056;" onclick="appendOperator('-')"><i
+                                class="fa-solid fa-minus"></i></button>
                         <button onclick="appendNumber(4)"><i class="fa-solid fa-4"></i></button>
                         <button onclick="appendNumber(5)"><i class="fa-solid fa-5"></i></button>
                         <button onclick="appendNumber(6)"><i class="fa-solid fa-6"></i></button>
                     </div>
                     <div class="fourth-row">
-                        <button onclick="appendOperator('+')"><i class="fa-solid fa-plus"></i></button>
+                        <button style="background-color: #23a056;" onclick="appendOperator('+')"><i
+                                class="fa-solid fa-plus"></i></button>
                         <button onclick="appendNumber(1)"><i class="fa-solid fa-1"></i></button>
                         <button onclick="appendNumber(2)"><i class="fa-solid fa-2"></i></button>
                         <button onclick="appendNumber(3)"><i class="fa-solid fa-3"></i></button>
                     </div>
                     <div class="fifth-row">
-                        <button onclick="appendDecimal()"><i class="fa-solid fa-circle"></i></button>
+                        <button style="background-color: #23a056;" onclick="appendDecimal('.')"><i
+                                class="fa-solid fa-circle"></i></button>
                         <button onclick="appendNumber(0)"><i class="fa-solid fa-0"></i></button>
-                        <button style="width: 170px; background-color: #ccffcc;" onclick="calculateResult()"><i class="fa-solid fa-equals"></i></button>
+                        <button style="width: 170px;" onclick="calculateResult()"><i
+                                class="fa-solid fa-equals"></i></button>
                     </div>
                 </div>
             </div>

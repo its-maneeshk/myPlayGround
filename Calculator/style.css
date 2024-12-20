@@ -141,7 +141,7 @@ input {
     font-weight: bold;
     font-family: 'DigitalFont';
     height: 60px;
-    width: 355px;
+    width: 22.18rem;
     border: 2px solid green;
     border-radius: 5px;
 }
@@ -214,7 +214,7 @@ button:hover {
     color: red;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
         background-color: #ccffcc;
     }
@@ -245,13 +245,13 @@ button:hover {
 
     /* STARING OF SECTION'S RIGHT CARD  */
     input {
-        width: auto;
+        width: 20rem;
     }
     button {
-        width: 3.8rem;
+        width: 4.4rem;
     }
     .wide-buttons {
-        width: 8.3rem;
+        width: 9.4rem;
     }
 
 

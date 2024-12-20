@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav>
-            <h1 class="logo-text">calci<span>.io</span></h1>
+            <a href="#"><h1 class="logo-text" title="Greeting from developer">calc<span>.io</span></h1></a>
             <div class="nav-left">
-                <a href="#" class="trn-scl"><i class="fa-solid fa-circle-info"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="info.html" class="trn-scl" title="Page's info"><i class="fa-solid fa-circle-info"></i></a>
+                <a href="developer-detail.html" title="Devloper info"><i class="fa-solid fa-user"></i></a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
             </div>
             <div class="part-two">
                 <h2>Did You Know? <i class="fa-regular fa-lightbulb"></i></h2>
-                <ul>
+                <ul style="margin-left: 60px;">
                     <li>The first mechanical calculator was invented in 1642 by Blaise Pascal.</li>
                     <li>A pocket calculator can solve math problems millions of times faster than the human brain!</li>
                     <li>Modern calculators can perform functions beyond basic math, like trigonometry and logarithms.
@@ -70,7 +70,7 @@
         <div class="card">
             <div class="insideCalc">
                 <p class="calculatorText">Basic Calculator</p>
-                <input type="text" id="answerScreen" readonly placeholder="00000000000000">
+                <input type="text" id="answerScreen" readonly placeholder="0000000000000000">
                 <div class="errorDiv">
                     <p id="errorMessage"> </p>
                 </div>

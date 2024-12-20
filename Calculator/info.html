@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/415161d9d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>info - calc.io</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .info {
+            position: relative;
+            line-height: 1.5rem;
+            margin-block: 3.5rem;
+            margin-inline: 9rem;
+        }
+
+        .three-point-collection {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            line-height: 1.5rem;
+            gap: 2rem;
+        }
+
+        * h3 {
+            margin-top: 0.5rem;
+        }
+
+        * p {
+            font-weight: bold;
+        }
+
+        .li-lists {
+            padding-left: 3rem;
+        }
+
+        .no-style {
+            font-weight: normal;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: #ccffcc;
+            }
+
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 1em 1.3em;
+            }
+            .info {
+                margin-block: 2rem;
+                margin-inline: 2rem;
+                gap: 0;
+                padding-bottom: 2rem;
+            }
+            .rectangle-nackground-card {
+                display: none;
+            }
+            .three-point-collection {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <h1 class="logo-text" title="calc.io">calc<span>.io</span></h1>
+            </a>
+            <div class="nav-left">
+                <a href="info.html" class="trn-scl" title="Page's info"><i class="fa-solid fa-circle-info"></i></a>
+                <a href="developer-detail.html" title="Devloper info"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-divider-line"></div>
+
+    <div class="rectangle-nackground-card"></div>
+
+    <div class="info">
+        <div class="overview">
+            <h3>1. Overview:</h3>
+            <p>This calculator project was created to learn and demonstrate the basics of JavaScript, including DOM
+                manipulation, event handling, and responsive design.</p>
+            <p>Build with: </p>
+            <ul class="li-lists">
+                <li>HTML for stracture</li>
+                <li>CSS for styling and responsive layout</li>
+                <li>JavaScript for functionality and event handling</li>
+                <li>Font Awesome for icons</li>
+            </ul>
+        </div>
+        <div class="three-point-collection">
+            <div class="left">
+                <div class="features">
+                    <h3>2. Features</h3>
+                    <p>Highlighting the interesting features of this calculator.</p>
+                    <ul class="li-lists">
+                        <li>Supports basic arithmetic operations.</li>
+                        <li>Allows decimal calculations.</li>
+                        <li>Responsive design for mobile and desktop devices.</li>
+                        <li>Styled using modern CSS techniques (e.g., flexbox, media queries).</li>
+                    </ul>
+                </div>
+                <div class="faq">
+                    <h3>3. FAQs</h3>
+                    <p>Answer common questions:</p>
+                    <ul class="li-lists">
+                        <li>What browsers support this calculator?</li>
+                        <p class="no-style">Answer: Modern browsers like Chrome, Firefox, Safari, and Edge.</p>
+                        <li>Can I use this calculator on my mobile device?</li>
+                        <p class="no-style">Answer: Yes, the calculator is fully responsive.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="future-improvements">
+                    <h3>4. Future Improvements</h3>
+                    <ul class="li-lists">
+                        <li>Adding advanced math functions (e.g., square root, power, modulo).</li>
+                        <li>Allowing keyboard inputs for faster calculations.</li>
+                        <li>Improving UI/UX design.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/415161d9d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dev info - calc.io</title>
+    <style>
+        .dev-info-collection {
+            margin-block: 10rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 2.2rem;
+            gap: 2rem;
+        }
+
+        .part-three-developer-detail {
+            width: 1050px;
+            position: relative;
+            font-size: 1.4rem;
+        }
+
+        .part-three-developer-detail h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .social-icons {
+            font-size: 3.5rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-icons a {
+            color: #23a056;
+            cursor: pointer;
+        }
+
+        .social-icons a:hover {
+            color: #5ce65c;
+        }
+
+        @media (max-width: 600px) {
+            .dev-info-collection {
+                /* margin-inline: 1rem; */
+            }
+
+            .part-three-developer-detail {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                line-height: 1.2rem;
+                gap: 1rem;
+                max-width: 350px;
+                font-size: 1rem;
+            }
+            .part-three-developer-detail h2 {
+                margin-bottom: 1rem;
+            }
+            .rectangle-nackground-card {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <h1 class="logo-text" title="calc.io">calc<span>.io</span></h1>
+            </a>
+            <div class="nav-left">
+                <a href="info.html" class="trn-scl" title="Page's info"><i class="fa-solid fa-circle-info"></i></a>
+                <a href="developer-detail.html" title="Devloper info"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="rectangle-nackground-card"></div>
+
+    <div class="dev-info-collection">
+        <div class="part-three-developer-detail">
+            <h2>About the Developer <i class="fa-solid fa-code"></i></h2>
+            <p>
+                This calculator was developed with <i class="fa-solid fa-heart"></i> by <strong><a href="#"
+                        class="dev-links">its_maneeshk_</a></strong>. This project was created for learning purposes,
+                specifically to practice <b>JavaScript</b>.
+            </p>
+            <p>
+                Last worked on: <strong>20/12/2024 03:12:50 PM</strong>
+            </p>
+            <p>
+                Feel free to <a href="mailto:maneeshkurmii@gmail.com" class="dev-links">reach</a> out for feedback or
+                collaboration on similar projects!
+            </p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/its-maneeshk" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/itsmaneeshk/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/its_maneeshk_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:maneeshkurmii@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

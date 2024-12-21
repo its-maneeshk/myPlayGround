@@ -1,11 +1,9 @@
 let initialValue = 0;
 
-if (window.innerWidth > 600) {
-    window.alert('Warning: You are in desktop mode on a mobile device!.\n\nPlease switch to mobile mode for better experience.');
-}
-
-if (window.innerWidth > 1200) {
-    window.alert('Warning: You are trying to access mobile mode.\nPlease stay in desktop mode for better experience');
+if (window.innerWidth  >= 600 && window.innerWidth <= 900) {
+    window.alert("Suggestion: You're in desktop mode on a mobile device!.\n\nPlease switch to mobile mode for better experience.");
+} else if(window.innerWidth >= 900 && window.innerWidth <= 1200) {
+    window.alert("Suggestion: You're trying to access mobile width in desktop device.\n\nPlease resize to desktop width.");
 }
 
 
